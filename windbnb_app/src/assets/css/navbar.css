@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoTitle {
+    color: #FF385C;
+    margin-left: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.searchForm {
+    margin-right: 30px;
+}
+
+.searchForm > .search {
+    padding: 10px;
+    border-radius: 30px 0px 0px 30px;
+    font-family: "Nunito Sans", sans-serif;
+    border: 1px solid black;            
+}
+
+.searchForm > .submitSearch {
+    padding: 11px;
+    background: white;
+    border-radius: 0px 30px 30px 0px;
+    border-left: none;
+    border: 1px solid black;            
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    padding: 20px;
+}
