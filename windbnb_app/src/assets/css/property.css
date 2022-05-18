@@ -1,0 +1,39 @@
+.property {
+    padding: 0px;
+    margin: 20px;
+    width:30%;
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .property {
+        width:100%;
+    }
+}
+
+.property > img {
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.property .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.property .details .typeHouse,
+.property .details .rating {
+    color: #7d7575;
+}
+
+.propery .details .rating .star {
+    color: blue;
+}
+
+.property .description {
+    text-align: start;
+    font-weight: 600;
+}
