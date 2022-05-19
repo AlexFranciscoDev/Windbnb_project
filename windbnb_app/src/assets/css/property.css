@@ -33,7 +33,17 @@
     color: blue;
 }
 
+.property .title {
+    text-align: start;
+}
+
 .property .description {
+    text-align: start;
+    margin-top: -8px;
+    font-weight: 400;
+}
+
+.property .price {
     text-align: start;
     font-weight: 600;
 }

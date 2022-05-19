@@ -1,0 +1,52 @@
+{
+    "properties": [
+        {
+            "id": 1,
+            "title": "Rockbridge, Ohio, United States",
+            "img": "/img/propiedad4.jpg",
+            "rating": 4.95,
+            "description": "Designed by Meredith Higgins",
+            "price": 799
+        },
+        {
+            "id": 2,
+            "title": "Joshua Tree, California, United States",
+            "img": "/img/propiedad2.jpg",
+            "rating": 4.64,
+            "description": "Designed by Ken Kellogg",
+            "price": 12000
+        },
+        {
+            "id": 3,
+            "title": "Gardone Riviera, Italy",
+            "img": "/img/propiedad3.jpg",
+            "rating": "New",
+            "description": "Amazing flat with amazing views",
+            "price": 700
+        },
+        {
+            "id": 4,
+            "title": "Paraty, Brasil",
+            "img": "/img/propiedad5.jpg",
+            "rating": 4.9,
+            "description": "Really good looking furniture",
+            "price": 191
+        },
+        {
+            "id": 5,
+            "title": "Navidad, Chile",
+            "img": "/img/propiedad6.jpg",
+            "rating": 4.82,
+            "description": "World luxury Hotel Awards",
+            "price": 140
+        },
+        {
+            "id": 6,
+            "title": "Kecamatan Mengwi, Indonesia",
+            "img": "/img/propiedad1.jpg",
+            "rating": 4.99,
+            "description": "Designed by Alexis Dory",
+            "price": 1169
+        }
+    ]
+}

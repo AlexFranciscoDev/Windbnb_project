@@ -3,9 +3,23 @@ import  './assets/css/navbar.css';
 import { FaAirbnb } from 'react-icons/fa';
 import { Search } from './components/Search';
 import { Property } from './components/Property';
+import data from './data.json';
+import { useEffect, useState } from 'react';
 
 
 function App() {
+
+  useEffect(() => {
+    getProperties();
+  }, []);
+
+  const [properties, setProperties] = useState([]);
+
+  const getProperties = () => {
+    setProperties(data.properties)
+    return data;
+  }
+
   return (
     <div className="App">
       {/* Navbar */}
@@ -14,15 +28,14 @@ function App() {
         <Search/>
       </nav>
       {/* List of properties*/}
-      <section className='properties'>
-        <Property img={require("./assets/img/propiedad1.jpg")}/>
-        <Property img={require("./assets/img/propiedad1.jpg")}/>
-        <Property img={require("./assets/img/propiedad1.jpg")}/>
-        <Property img={require("./assets/img/propiedad1.jpg")}/>
-        <Property img={require("./assets/img/propiedad1.jpg")}/>
-        <Property img={require("./assets/img/propiedad1.jpg")}/>
+      <div className='properties'>
+        {properties.map(property => {
+          return (<Property 
+            key={property.id}
+            property={property}/>)
+        })}
 
-      </section>
+      </div>
       <footer>
         Created by alexFranciscoDev, &copy; 2022
       </footer>
