@@ -6,6 +6,7 @@ import { Property } from './components/Property';
 import data from './data.json';
 import { useEffect, useState } from 'react';
 import { SearchResults } from './components/SearchResults';
+import { RouterMain } from './routers/RouterMain';
 
 
 function App() {
@@ -31,15 +32,8 @@ function App() {
         <h1 className="logoTitle"><FaAirbnb />windbnb</h1>
         <Search setSearchValue={setSearchValue} getProperties={getProperties} properties={properties} setProperties={setProperties} />
       </nav>
+      <RouterMain properties={properties} setProperties={setProperties}/>
       {/* List of properties*/}
-      <div className='properties'>
-        {properties.map(property => {
-          return (<Property
-            key={property.id}
-            property={property} />)
-        })}
-
-      </div>
       <footer>
         Created by alexFranciscoDev, &copy; 2022
       </footer>
