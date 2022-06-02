@@ -15,13 +15,15 @@ function App() {
     getProperties();
   }, []);
 
+  const propertiesData = data.properties;
+
   // Search properties state
   const [searchValue, setSearchValue] = useState("hola");
   // Properties
   const [properties, setProperties] = useState([]);
   // Get properties
   const getProperties = () => {
-    setProperties(data.properties)
+    setProperties(propertiesData)
     return data;
   }
 
@@ -30,7 +32,7 @@ function App() {
       {/* Navbar */}
       <nav className="navbar">
         <h1 className="logoTitle"><FaAirbnb />windbnb</h1>
-        <Search setSearchValue={setSearchValue} getProperties={getProperties} properties={properties} setProperties={setProperties} />
+        <Search propertiesData={propertiesData} setSearchValue={setSearchValue} setProperties={setProperties} />
       </nav>
       <RouterMain properties={properties} setProperties={setProperties}/>
       {/* List of properties*/}
